@@ -1,0 +1,14 @@
+<form action="/update_edit/<%= task.id %>" method="POST">
+    <div class="mb-3">
+      <label class="form-label">content</label>
+      <br>
+      <input type="hidden" class="form-control" name="id" value="<%= task.id %>">
+      <input type="text" class="form-control" name="content" value="<%= task.content %>">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">description</label>
+        <br>
+        <input type="text" class="form-control" name="description" value="<%= task.description %>">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
